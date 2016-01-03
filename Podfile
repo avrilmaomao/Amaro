@@ -28,7 +28,8 @@ pod 'Asterism'         # Nice & fast collection operations
 #pod 'Reveal-iOS-SDK', :configurations => ['Debug_Staging', 'Debug_Production']
 
 # Testing necessities
-target 'Specs', :exclusive => true do
+target 'Specs' do
+  inherit! :search_paths
   pod 'Specta'
   pod 'Expecta'
 end
